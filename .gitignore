@@ -9,8 +9,9 @@ __pycache__/
 # claude
 .claude/
 
-# data
+# datasets
 challenge_development_set_final/
+datasets/
 
 # Distribution / packaging
 .Python

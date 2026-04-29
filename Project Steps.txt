@@ -22,3 +22,15 @@
 - Lots of experimentation, should we add everything in the report?
 -- 20% best experiments, only a four page report
 - try to pin one architecture for each person and try getting that better.
+
+---
+
+Steps to Run on GPU Machine
+
+conda env update -f environment.yml
+conda activate xlpsr
+bash setup_project.sh
+bash run_pipeline.sh
+python3 code/apply_fine_tunes.py
+Open code/ultraplate_pipeline.ipynb in your Jupyter environment and run all cells. 
+you should see a printout saying: Loading custom fine-tuned fast-plate-ocr weights from models/fastplate_french_siv/fastplate_french_siv.onnx when the model loads.
