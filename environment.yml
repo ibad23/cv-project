@@ -1,0 +1,41 @@
+name: xlpsr
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - pytorch-cuda=11.8
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-image
+  - jupyter
+  - ipykernel
+  - tqdm
+  - pip
+  - pip:
+    - transformers>=4.35.0
+    - opencv-python
+    - Pillow>=9.0.0
+    - safetensors
+    - paddlepaddle-gpu==2.6.2
+    - paddleocr==2.9.1
+    - easyocr
+    - fast-plate-ocr[train]
+    - einops
+    - onnxruntime-gpu
+    - pytorch-lightning
+    - timm
+    - nltk
+    - huggingface_hub
+    - requests
+    - fonttools
+    - basicsr
+    - facexlib
+    - gfpgan
+    - gdown
+    - albumentations

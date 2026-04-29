@@ -1,0 +1,24 @@
+
+- Had issues with the model not downloading properly and it was using the fallback simple model (bicubic), which was giving negative accuracies overall.
+- After the models were downloaded properly, they for some reason weren't guessing anything at all, making accuracy 0%.
+- OCR element of the pipeline for some reason isn't working at all, trying to debug if its a version issue or if I should use another model here.
+
+- Going through the initial pipeline for now, and will experiment more later on.
+
+- We also have negative marking, which makes our accuracy even worse. Should we remove that? They are part of compeititions rules though.
+
+- What about a feedback loop? but maybe that doesn't work because actual dataset doesn't have ground truths.
+- Swin2SR seems to be worse at upscaling images for this problem, than the basic model. Maybe we should use some other model.
+- Also, its not stated but allowed that we can train or fine-tune our models. Should we do that as well? How much would it actually help though?
+- Future: different models and steps in the pipeline, maybe some fine-tuning using external datasets.
+- Gemma 4, Deep Seek, QWEN for OCR Models
+
+---
+
+- manually label the public dataset and try fine-tuning the last layers of the model, maybe an external dataset would work.
+- model for upscaling.
+- identify the weaknesses in the pipeline, find the metrics of each stage and see where the issue actually is. dont only see the final results.
+- categorizing easy, medium and hard sequences and then getting three metrics
+- Lots of experimentation, should we add everything in the report?
+-- 20% best experiments, only a four page report
+- try to pin one architecture for each person and try getting that better.

@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# claude
+.claude/
+
+# data
+challenge_development_set_final/
+
 # Distribution / packaging
 .Python
 build/
